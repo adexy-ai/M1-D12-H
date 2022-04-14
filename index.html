@@ -1,60 +1,59 @@
-
-
 <html>
-    <head>
-      <style>
-        .myHeading {
-          color: red;
-        }
-      </style>
-    </head>
-    <body>
+  <head>
+    <style>
+      .myHeading {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>This is the title of the page</h1>
+      <h2>This is the subtitle of the page</h2>
+    </div>
+
+    <div>
+      <hr />
+
+      <ul id="firstList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <ul id="secondList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <a href="strive.school">This link goes to Strive School</a>
+
       <div>
-        <h1>This is the title of the page</h1>
-        <h2>This is the subtitle of the page</h2>
+        <p>This text is just for the exercise</p>
       </div>
-  
+
       <div>
-        <hr />
-  
-        <ul id="firstList">
-          <li>1st</li>
-          <li>2nd</li>
-          <li>3rd</li>
-        </ul>
-  
-        <ul id="secondList">
-          <li>1st</li>
-          <li>2nd</li>
-          <li>3rd</li>
-        </ul>
-  
-        <a href="strive.school">This link goes to Strive School</a>
-  
-        <div>
-          <p>This text is just for the exercise</p>
-        </div>
-  
-        <div>
-          <input
-            type="text"
-            id="input-field"
-            placeholder="input field for the exercise"
-          />
-        </div>
+        <input
+          type="text"
+          id="input-field"
+          placeholder="input field for the exercise"
+        />
       </div>
-  
-      <div>
-        <p>And this text is just for the exercise too!</p>
-        <h2 style="color: red">
-          Save this page on your computer and open it with VSCode to get the
-          questions!
-        </h2>
-      </div>
-      <script>
-        /* EXERCISE 1
+    </div>
+
+    <div>
+      <p>And this text is just for the exercise too!</p>
+      <h2 style="color: red">
+        Save this page on your computer and open it with VSCode to get the
+        questions!
+      </h2>
+    </div>
+    <script>
+      /* EXERCISE 1
          Write a function for changing the title of the document in something else.
         */
+<<<<<<< HEAD
   
         const changeTitle = function (newTitle) {
           let mynewTitle = document.getElementsByTagName("h1")
@@ -64,96 +63,106 @@
         changeTitle("This is the new Title i inserted")
   
         /* EXERCISE 2
+=======
+
+      const changeTitle = function (newTitle) {
+        let anotherTitle = document.querySelector("div h1");
+        anotherTitle.innerText = newTitle;
+        //
+      };
+      changeTitle("This is the new title given it by Ade the author");
+
+      /* EXERCISE 2
+>>>>>>> 3abb5fcf9462eac6c341da88d8de70ddc9f0f3f3
          Write a function for changing the class of the title of the page in "myHeading".
         */
-  
-        const addClassToTitle = function () {
-          //
-        };
-  
-        /* EXERCISE 3
+
+      const addClassToTitle = function () {
+        //
+      };
+
+      /* EXERCISE 3
          Write a function for changing the text of only the p which are children of a div.
         */
-  
-        const changePcontent = function () {
-          //
-        };
-  
-        /* EXERCISE 4
+
+      const changePcontent = function () {
+        //
+      };
+
+      /* EXERCISE 4
          Write a function for changing the href property of every link to https://www.google.com
         */
-  
-        const changeUrls = function () {
-          //
-        };
-  
-        /* EXERCISE 5
+
+      const changeUrls = function () {
+        //
+      };
+
+      /* EXERCISE 5
          Write a function for adding a new list item in the second unordered list.
         */
-  
-        const addToTheSecond = function (content) {
-          //
-        };
-  
-        /* EXERCISE 6
+
+      const addToTheSecond = function (content) {
+        //
+      };
+
+      /* EXERCISE 6
          Write a function for adding a second paragraph to the first div.
         */
-  
-        const addParagraph = function (content) {
-          //
-        };
-  
-        /* EXERCISE 7
+
+      const addParagraph = function (content) {
+        //
+      };
+
+      /* EXERCISE 7
          Write a function for making the first unordered list disappear.
         */
-  
-        const firstUlDisappear = function () {
-          //
-        };
-  
-        /* EXERCISE 8
+
+      const firstUlDisappear = function () {
+        //
+      };
+
+      /* EXERCISE 8
          Write a function for making the background of every unordered list green.
         */
-  
-        const paintItGreen = function () {
-          //
-        };
-  
-        /* EXERCISE 9
+
+      const paintItGreen = function () {
+        //
+      };
+
+      /* EXERCISE 9
          Make the heading of the page change color every time the user clicks on it.
         */
-  
-        const makeItClickable = function () {
-          //
-        };
-  
-        /* EXERCISE 10
+
+      const makeItClickable = function () {
+        //
+      };
+
+      /* EXERCISE 10
          Change the footer text with something else when the user clicks on it.
         */
-  
-        const changeFooterText = function () {
-          //
-        };
-  
-        /* EXERCISE 11
+
+      const changeFooterText = function () {
+        //
+      };
+
+      /* EXERCISE 11
          Attach an event listener to the input field in the page for console logging its value just after any keystroke.
         */
-  
-        const inputField = document.getElementById("input-field");
-        // ...
-  
-        /* EXERCISE 12
+
+      const inputField = document.getElementById("input-field");
+      // ...
+
+      /* EXERCISE 12
          Create a welcome alert message when the page successfully loads.
         */
-  
-        window.onload = function () {
-          //
-        };
-  
-        /* EXERCISE 13
+
+      window.onload = function () {
+        //
+      };
+
+      /* EXERCISE 13
          Use HTML5 tags to properly provide semantic meaning to the different portions of the page.
         */
-      </script>
-    </body>
-  </html>
-  
+    </script>
+  </body>
+</html>
